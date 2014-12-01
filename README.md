@@ -31,7 +31,6 @@ Or install it yourself as:
 
 ```
 bundle exec ./bin/playmobil
-
 ```
 
 ## Contributing
