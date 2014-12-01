@@ -17,10 +17,7 @@ class Client(object):
         self.tcpserversink.set_property('port', 8080)
 
         self.pipeline.add(self.videotestsrc, self.theoraenc, self.oggmux, self.tcpserversink)
-        self.videotestsrc.link(self.theoraenc)
-        self.theoraenc.link(self.oggmux)
-        self.oggmux.link(self.tcpserversink)
-
+        gst.element_link_many(self.videotestsrc, self.theoraenc, self.oggmux, self.tcpserversink)
 
     def create_element(self, element, name):
         return gst.element_factory_make(element, name)
