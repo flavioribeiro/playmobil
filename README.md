@@ -25,11 +25,14 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install playmobil
+    $ PKG_CONFIG_PATH=/usr/local/opt/libffi/lib/pkgconfig gem install playmobil
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+bundle exec ./bin/playmobil
+
+```
 
 ## Contributing
 
