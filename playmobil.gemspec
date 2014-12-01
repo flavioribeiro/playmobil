@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Playmobil::VERSION
   spec.authors       = ["Lucas Mundim", "Marcelo Pereira", "Leandro Moreira", "Flavio Ribeiro"]
   spec.email         = ["lucas.mundim@gmail.com", "marcnit@gmail.com", "leandro.ribeiro.moreira@gmail.com", "email@flavioribeiro.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{GStreamer transcoder pipeline}
+  spec.description   = %q{GStreamer transcoder pipeline for the win}
   spec.homepage      = ""
   spec.license       = "MIT"
 
