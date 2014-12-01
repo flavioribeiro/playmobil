@@ -22,4 +22,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec"
   spec.add_runtime_dependency "gstreamer", "~> 2.2.3"
+  spec.add_runtime_dependency "gtk2", "~> 2.2.3"
 end

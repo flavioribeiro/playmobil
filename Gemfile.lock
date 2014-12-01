@@ -3,10 +3,17 @@ PATH
   specs:
     playmobil (0.0.1)
       gstreamer (~> 2.2.3)
+      gtk2 (~> 2.2.3)
 
 GEM
   remote: https://rubygems.org/
   specs:
+    atk (2.2.3)
+      glib2 (= 2.2.3)
+    cairo (1.14.0)
+      pkg-config (>= 1.1.5)
+    gdk_pixbuf2 (2.2.3)
+      glib2 (= 2.2.3)
     glib2 (2.2.3)
       pkg-config
     gobject-introspection (2.2.3)
@@ -14,6 +21,13 @@ GEM
     gstreamer (2.2.3)
       glib2 (= 2.2.3)
       gobject-introspection (= 2.2.3)
+    gtk2 (2.2.3)
+      atk (= 2.2.3)
+      gdk_pixbuf2 (= 2.2.3)
+      pango (= 2.2.3)
+    pango (2.2.3)
+      cairo (>= 1.12.5)
+      glib2 (= 2.2.3)
     pkg-config (1.1.6)
     rake (10.3.2)
 

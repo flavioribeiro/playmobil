@@ -4,6 +4,12 @@ TODO: Write a gem description
 
 ## Installation
 
+Install dependencies
+
+```
+brew install gstreamer gst-plugins-base gst-libav gst-plugins-bad gst-plugins-good gst-plugins-ugly
+```
+
 Add this line to your application's Gemfile:
 
 ```ruby
