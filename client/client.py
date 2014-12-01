@@ -5,9 +5,6 @@ gobject.threads_init()
 import pygst
 pygst.require("0.10")
 import gst
-import pygtk
-pygtk.require("2.0")
-import gtk
 
 class Client(object):
     def __init__(self):
@@ -34,5 +31,5 @@ class Client(object):
 
 client = Client()
 client.start()
-gtk.main()
-
+loop = gobject.MainLoop()
+loop.run()
