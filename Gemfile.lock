@@ -1,0 +1,17 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    glib2 (2.2.3)
+      pkg-config
+    gobject-introspection (2.2.3)
+      glib2 (= 2.2.3)
+    gstreamer (2.2.3)
+      glib2 (= 2.2.3)
+      gobject-introspection (= 2.2.3)
+    pkg-config (1.1.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  gstreamer
