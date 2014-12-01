@@ -1,4 +1,4 @@
-# A sample Gemfile
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "gstreamer"
+# Specify your gem's dependencies in playmobil.gemspec
+gemspec

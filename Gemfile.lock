@@ -1,3 +1,9 @@
+PATH
+  remote: .
+  specs:
+    playmobil (0.0.1)
+      gstreamer (~> 2.2.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -9,9 +15,12 @@ GEM
       glib2 (= 2.2.3)
       gobject-introspection (= 2.2.3)
     pkg-config (1.1.6)
+    rake (10.3.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  gstreamer
+  bundler (~> 1.7)
+  playmobil!
+  rake (~> 10.0)
