@@ -12,7 +12,6 @@
 *.o
 *.a
 mkmf.log
-/.bundle
-/log/*.log
-/tmp
-
+/receiver/.bundle
+receiver/log/*.log
+receiver/tmp/*
