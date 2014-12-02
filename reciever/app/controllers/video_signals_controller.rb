@@ -25,7 +25,8 @@ class VideoSignalsController < ApplicationController
   # POST /video_signals.json
   def create
     @video_signal = VideoSignal.new(video_signal_params)
-
+    @ingest = Ingest.last.host
+    @video_signal.source = @ingest
     respond_to do |format|
       if @video_signal.save
         format.html { redirect_to @video_signal, notice: 'Video signal was successfully created.' }
@@ -69,6 +70,6 @@ class VideoSignalsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def video_signal_params
-      params.require(:video_signal).permit(:name, :source)
+      params.require(:video_signal).permit(:name)
     end
 end

@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141202132649) do
+ActiveRecord::Schema.define(version: 20141202160013) do
+
+  create_table "ingests", force: true do |t|
+    t.string   "host"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "inputs", force: true do |t|
     t.string   "name"
