@@ -10,6 +10,8 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'rails_admin'
 
+gem 'unicorn'
+
 gem 'mongoid', '~> 4.0.0'
 
 # Resque
@@ -23,7 +25,13 @@ end
 
 group :test, :development do
   gem 'rspec-rails'
-
   # Use debugger
   gem 'byebug'
 end
+
+group :tools do
+  gem 'capistrano', '< 3.0.0'
+  gem "net-ssh" , "2.7.0"
+end
+
+gem 'rvm-capistrano'
