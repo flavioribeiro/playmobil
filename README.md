@@ -10,7 +10,7 @@ Install dependencies
 brew install libffi gtk+
 brew install gstreamer gst-plugins-base gst-libav gst-plugins-good gst-plugins-ugly
 XCFLAGS="-fPIC" brew install rtmpdump
-XCFLAGS="-fPIC" brew install --build-from-source -v gst-plugins-bad --with-rtmpdump --with-faac --with-faad2 --with-libdvdread --with-libexif
+XCFLAGS="-fPIC" brew install --build-from-source -v gst-plugins-bad --with-rtmpdump --with-faac --with-faad2 --with-libdvdread --with-libexif --with-gnutls
 ```
 
 Add this line to your application's Gemfile:
