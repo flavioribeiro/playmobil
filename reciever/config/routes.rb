@@ -3,6 +3,7 @@ Playmobil::Application.routes.draw do
   resources :ingests
 
   resources :video_signals
+  mount Resque::Server.new, at: "/resque"
 
   mount RailsAdmin::Engine => '/receiver', as: 'rails_admin'
 
