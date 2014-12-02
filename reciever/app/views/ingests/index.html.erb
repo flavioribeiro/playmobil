@@ -1,0 +1,27 @@
+<h1>Listing ingests</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Host</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ingests.each do |ingest| %>
+      <tr>
+        <td><%= ingest.host %></td>
+        <td><%= link_to 'Show', ingest %></td>
+        <td><%= link_to 'Edit', edit_ingest_path(ingest) %></td>
+        <td><%= link_to 'Destroy', ingest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ingest', new_ingest_path %>

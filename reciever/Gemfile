@@ -10,7 +10,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'rails_admin'
 
-gem 'mysql2'
+gem 'mongoid', '~> 4.0.0'
 
 # Resque
 gem 'resque', require: 'resque/server'

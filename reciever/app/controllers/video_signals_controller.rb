@@ -25,7 +25,7 @@ class VideoSignalsController < ApplicationController
   # POST /video_signals.json
   def create
     @video_signal = VideoSignal.new(video_signal_params)
-    @ingest = Ingest.last.host
+    @ingest = Ingest.last.url
     @video_signal.source = @ingest
     respond_to do |format|
       if @video_signal.save

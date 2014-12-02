@@ -1,0 +1,21 @@
+<%= form_for(@ingest) do |f| %>
+  <% if @ingest.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ingest.errors.count, "error") %> prohibited this ingest from being saved:</h2>
+
+      <ul>
+      <% @ingest.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :host %><br>
+    <%= f.text_field :host %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
