@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Specify your gem's dependencies in playmobil.gemspec
-gemspec
+#gemspec
 
 gem 'rails', '4.0.4'
 gem 'sass-rails', '~> 4.0.2'
@@ -13,9 +13,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'rails_admin'
 
-# MongoDB
-gem 'mongoid', '>= 4.0.0'
-gem 'bson_ext'
+gem 'mysql2'
 
 # Resque
 gem 'resque', require: 'resque/server'
